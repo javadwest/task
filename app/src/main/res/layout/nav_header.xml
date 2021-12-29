@@ -2,21 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain_layout_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E9ECF0">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/welcome"
         android:layout_width="260dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="#707070"
         android:layout_height="69dp"
         android:layout_marginTop="17dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:strokeColor="#707070"
+        app:strokeWidth="1dp">
 
         <ImageView
             android:id="@+id/imageView18"
@@ -27,7 +29,7 @@
             app:srcCompat="@drawable/arrow" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/img_welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
@@ -49,9 +51,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView5"
-        app:strokeWidth="1dp"
-        app:strokeColor="#707070"
+        android:id="@+id/result"
         android:layout_width="260dp"
         android:layout_height="69dp"
         android:layout_marginTop="17dp"
@@ -59,7 +59,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" >
+        app:layout_constraintTop_toBottomOf="@+id/report"
+        app:strokeColor="#707070"
+        app:strokeWidth="1dp">
 
         <ImageView
             android:id="@+id/imageView17"
@@ -70,7 +72,7 @@
             app:srcCompat="@drawable/arrow" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/img_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
@@ -92,17 +94,18 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView4"
+        android:id="@+id/report"
         android:layout_width="260dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="#707070"
+        android:clickable="false"
         android:layout_height="69dp"
         android:layout_marginTop="12dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+        app:layout_constraintTop_toBottomOf="@+id/change_profile"
+        app:strokeColor="#707070"
+        app:strokeWidth="1dp">
 
         <ImageView
             android:id="@+id/imageView16"
@@ -113,7 +116,7 @@
             app:srcCompat="@drawable/arrow" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/img_report"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
@@ -132,6 +135,7 @@
             android:text="report"
             android:textColor="#006EFF"
             android:textStyle="bold" />
+
     </com.google.android.material.card.MaterialCardView>
 
     <FrameLayout
@@ -218,19 +222,20 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView3"
+        android:id="@+id/change_profile"
         android:layout_width="260dp"
+        android:clickable="false"
         android:layout_height="69dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="#707070"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:strokeColor="#707070"
+        app:strokeWidth="1dp">
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/img_change_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="14dp"
@@ -258,4 +263,5 @@
             android:layout_marginTop="25dp"
             app:srcCompat="@drawable/arrow" />
     </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
