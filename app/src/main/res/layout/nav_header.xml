@@ -51,6 +51,46 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/person"
+        android:layout_width="260dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="104dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:strokeColor="#707070"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="217dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/arrow" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="211dp"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@drawable/ic_baseline_people_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="welcome"
+            android:textColor="#006EFF"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/result"
         android:layout_width="260dp"
         android:layout_height="69dp"
